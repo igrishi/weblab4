@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body {
+            background-color: #92a8d1;
+            padding-bottom: 50px;
+        }
+
+        .maindiv {
+            border: 1px solid black;
+            padding-bottom: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-radius: px;
+            background-color: white;
+        }
+
+        .button {
+            background: #4040a1;
+            border-radius: 2px;
+            color: #ffffff;
+            font-family: Arial;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        form{
+            width: 600px;
+            margin: auto;
+        }
+        h2{color: #4040a1;
+            font-family: Comic Sans MS;}
+    </style>
+</head>
+
+<body>
+    <h1 align="center" style="color: white; font-family: Comic Sans MS;">REGISTRATION</h1>
+
+    <form action="index.html" method="post">
+
+
+        <div class="maindiv">
+            <h2 align="center">Basic Details</h2>
+            <hr color="black" size="0.1px">
+            <br>
+            <table>
+                <tr>
+                    <td>Form Number</td>
+                    <td><input type="number"></td>
+                </tr>
+
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text"></td>
+                </tr>
+
+                <tr>
+                    <td>Roll Number</td>
+                    <td>
+                        <input type="number">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        Male<input type="radio" id="male" name="gender" value="male" checked>
+                        Female<input type="radio" id="Female" name="gender" value="Female">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>DOB</td>
+                    <td>
+                        <input type="date">
+                    </td>
+                </tr>
+
+                <tr>
+
+                    <td>PWD</td>
+                    <td>
+                        YES<input type="radio">
+                        NO<input type="radio" checked>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Category</td>
+                    <td>
+                        <select>
+                            <option value="General">General</option>
+                            <option value="OBC">OBC</option>
+                            <option value="SC">SC</option>
+                            <option value="ST">ST</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+
+            Address
+            <br>
+            <textarea name="address" rows="10" cols="75"></textarea>
+            <br>
+            <h4>PLEASE INPUT THE CORRECT PIN CODE</h4>
+            <table>
+                <tr>
+                    <td>PIN CODE</td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td>PHONE OF STUDENT</td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td>PHONE OF GUARDIAN</td>
+                    <td><input type="number"></td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <br>
+
+        <div class="maindiv">
+            <h2 align="center">Acadmic Information</h2>
+            <hr color="black" size="0.1px">
+            <br>
+            <table>
+                <tr>
+                    <td>Course</td>
+                    <td><select>
+                            <option value="">B.Tech</option>
+                            <option value="">B.Arch</option>
+                            <option value="">M.Tech</option>
+                            <option value="">Int. Msc</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Branch</td>
+                    <td><input type="text"></td>
+                </tr>
+
+                <tr>
+                    <td>Semester</td>
+                    <td>
+                        <select>
+                            <option value="1st">1st</option>
+                            <option value="3rd">3rd</option>
+                            <option value="5th">5th</option>
+                        </select>
+                        (For which allotment will be done)
+                    </td>
+                </tr>
+                <tr>
+                    <td>All India Rank</td>
+                    <td><input type="number">(2018 JEE Main/GATE)</td>
+                </tr>
+                <tr>
+                    <td>Category Rank</td>
+                    <td><input type="number">(2018 JEE Main/GATE)</td>
+                </tr>
+                <tr>
+                    <td>CGPA</td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td>Backlog</td>
+                    <td>
+                        YES<input type="radio">
+                        NO<input type="radio" checked>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hostel Accomodation</td>
+                    <td>
+                        YES<input type="radio" checked>
+                        NO<input type="radio"><label for="">(if any)
+                    </td>
+                </tr>
+                <tr>
+                    <td>Name of Hostel</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Room number</td>
+                    <td><input type="number"></td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <br>
+
+        <div class="maindiv">
+            <h2 align="center">Account Details for Refunding process</h2>
+            <hr color="black" size="0.1px">
+            <br>
+            <table>
+                <tr>
+                    <td>Account Holder Name</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Account Number</td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td>IFS Code</td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td>Bank Name</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Bank Branch</td>
+                    <td><input type="text"></td>
+                </tr>
+            </table>
+
+        </div>
+        <br><br>
+
+        <div align="center">
+            <input type="submit" class="button" value="Submit">&nbsp;&nbsp;&nbsp;
+            <input type="reset" class="button" value="Reset">
+        </div>
+
+    </form>
+
+
+</body>
+
+</html>
